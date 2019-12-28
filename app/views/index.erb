@@ -4,9 +4,8 @@
 
   </head>
   <body>
-    <%@recipes.each do |r|%>
-      <%=r.name%>
-      <a href="/recipes/<%=r.id%>">
-    <%end%>
+  <% @recipes.each do |r| %>
+    <a href="/recipes/<%= r.id %>">Name: <%= r.name %></a>
+  <% end %>
   </body>
 </html>
